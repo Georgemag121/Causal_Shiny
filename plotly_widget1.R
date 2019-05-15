@@ -1,4 +1,4 @@
-df0 <- read.csv("plotly_example.csv")
+df0 <- read.csv("data/plotly_example.csv")
 
 df2 <- df0 %>% select(2:7)
 df2$group <- ifelse((df2$x > 30 & df2$treatment == 0) | (df2$x < 30 & df2$treatment == 1), 3, 1)

@@ -14,5 +14,8 @@ This RShiny application aims to simplify the process of conducting Causal Infere
 * Specify the column number of ID column (if applicable), treatment column (Y), and response column (Z)
 * Use Option panel to select method of analysis
 
+![Interface](www/select_variables.png)
+
 ## Package Used
 * [bartCause](https://github.com/vdorie/bartCause)  
+* [dbarts](https://github.com/vdorie/dbarts)

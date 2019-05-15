@@ -103,7 +103,13 @@ ui <- fluidPage(theme = shinytheme("cerulean"),
                                                   div(style='float:left;', 'No Overlap'),
                                                   div(style='float:right;', 'Complete Overlap')),
                                       ticks = F, min = 1, max = 100, value = 1, width = '500px'),
-                          plotlyOutput("overlap_plty")
+                          plotlyOutput("overlap_plty"),
+                          
+                          hr(),
+                          
+                          h4("Contact"),
+                          p("Email: ly593@nyu.edu")
+                          
                         )
                    )
               ),
@@ -735,9 +741,3 @@ server <- function(input, output, session) {
  
 # Run the application 
 shinyApp(ui = ui, server = server)
-
-#testdata <- read.csv("/Users/George/Desktop/A3SR/Others/Causal_Inference_Shiny/experiment/simpletest.csv", header = T)
-#fit1 <- bartc(testdata$Outcome, testdata$Treatment, testdata[, 1:2], estimand = "ate")
-#cpsdat <- read.csv("/Users/George/Desktop/A3SR/Others/Causal_Inference_Shiny/experiment/cps.csv", header = T)
-#fit2 <- bartc(cpsdat$re78t, cpsdat$treat, cpsdat$age + cpsdat$educ + cpsdat$re74t, estimand = "ate", method.trt = "glm", p.scoreAsCovariate = T, method.rsp = "bart", commonSup.rule = "sd")
-#fit3 <- bartc(cpsdat$re78t, cpsdat$treat, cpsdat$age + cpsdat$black + cpsdat$re74t, estimand = "ate", method.trt = "glm", p.scoreAsCovariate = T, method.rsp = "bart", commonSup.rule = "sd", group.by = cpsdat$educ)
