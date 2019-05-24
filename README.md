@@ -1,5 +1,5 @@
 # Causal Inference R-Shiny
-This RShiny application aims to simplify the process of conducting Causal Inference using BART (Bayesian Additive regression Trees).
+This RShiny application aims to simplify the process of conducting Causal Inference using BART (Bayesian Additive regression Trees). You can find a verion of the application [here](https://a3sr.shinyapps.io/causal/)
 
 ## What It Does
 * Allows options of different methods on propensity scores, treatment variables, and response variables
